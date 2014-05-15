@@ -56,9 +56,11 @@ Public Class Form1
         If pt.x < Location.X - 10 Or pt.y < Location.Y Or pt.x > Location.X + Width - 1 Or pt.y > Location.Y + Height - 1 Then
             Me.Height = 248
             Panel2.Visible = False
+            Panel1.Visible = False
         Else
             Me.Height = 300
             Panel2.Visible = True
+            Panel1.Visible = True
         End If
     End Sub
     <DllImport("User32.dll")> _
